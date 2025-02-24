@@ -28,7 +28,7 @@ export default function Home() {
                         <h3 className="text-lg font-medium text-blue-500">¿Tienes dudas? ¡Te escuchamos!</h3>
                         <a
                             href="tel:+34910228319"
-                            className="text-3xl font-semibold text-blue-700 hover:text-blue-800 transition-colors 
+                            className="text-3xl font-semibold hover:text-blue-800 transition-colors 
                     shadow-lg rounded-lg bg-gradient-to-r from-blue-400 to-blue-600
                     text-white flex items-center justify-center space-x-2 p-2"
                         >910228319</a>
@@ -36,7 +36,9 @@ export default function Home() {
                 </section>
                 <section className="py-12 bg-gray-50 flex items-center justify-center space-x-8">
                     <div className="w-1/3 max-w-xs">
-                        <img
+                        <Image
+                            width={200}
+                            height={200}
                             src="/images/caption.jpg"
                             alt="Imagen de ejemplo"
                             className="w-full h-auto object-cover rounded-lg"
@@ -66,7 +68,9 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="w-full max-w-xs">
-                        <img
+                        <Image
+                            width={200}
+                            height={200}
                             src="/images/dock.jpg"
                             alt="Imagen de ejemplo"
                             className="w-full h-auto object-cover rounded-lg"
