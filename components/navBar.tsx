@@ -8,17 +8,8 @@ export default function NavBar() {
                     <span>DFMTravel</span>
                 </div>
                 <div className="space-x-8">
-                    <a
-                        className="text-xl text-blue-600 hover:text-blue-800 transition-colors"
-                    >
-                        Inicio
-                    </a>
-                    <a
-                        href="#contacto"
-                        className="text-xl text-blue-600 hover:text-blue-800 transition-colors"
-                    >
-                        Contacto
-                    </a>
+                    <p><a href="tel:+34910228319">910228319</a></p>
+                    <p><a href="mailto: info@dfmtravel.com">Send email</a></p>
                 </div>
             </div>
         </nav>
