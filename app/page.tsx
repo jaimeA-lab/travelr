@@ -17,7 +17,7 @@ export default function Home() {
                         <h1 className="text-4xl font-bold text-white">¡Reserva tu viaje ahora!</h1>
                     </div>
                     <div className="mt-8 text-center relative z-10 max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-semibold text-white mb-4">¡LLÁMANOS AHORA PLANIFICA EL VIAJE DE TU VIDA!</h2>
+                        <h2 className="text-3xl font-semibold text-white mb-4">¡LLÁMANOS AHORA Y PLANIFICA EL VIAJE DE TU VIDA!</h2>
                         <button className="px-8 py-3 bg-blue-600 text-white text-xl font-bold rounded-lg hover:bg-blue-700 transition-colors">¡Llámanos!</button>
                     </div>
                 </section>
