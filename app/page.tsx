@@ -1,26 +1,32 @@
 import Image from "next/image";
+import { ArrowRight, Clock4, TrendingUp } from "lucide-react"
 
 export default function Home() {
     return (
         <>
-            <section className="bg-blue-50">
-                <div className="container mx-auto h-screen flex items-start bg-red-100 flex flex-col">
-                    <div className="bg-green-200 flex-1 flex flex-col justify-center items-start">
-                        <h1 className="text-7xl max-w-[600px]">Explore The majestic Asia Landscape Now</h1>
-                        <button className="bg-black text-white px-2 py-2 my-2">Get Started!</button>
+            <section className="w-full h-screen bg-cover bg-center"
+                style={{ backgroundImage: 'url(\"/images/canyon.jpg\")' }}>
+                <div className="container mx-auto h-screen flex items-start flex flex-col">
+                    <div className="flex-1 flex flex-col justify-center items-start gap-10">
+                        <div className="text-white bg-white/20 h-10 items-center flex px-4 rounded-full text-sm border border-white/20">Viaja como nunca antes</div>
+                        <h1 className="text-7xl text-white max-w-[800px] font-bold">Porque una buena experiencia comienza antes del viaje.</h1>
+                        <button className="flex bg-white h-12 px-6 text-black rounded-full font-semibold items-center gap-2">
+                            Conócenos
+                            <ArrowRight size={16} />
+                        </button>
                     </div>
-                    <div className="flex flex-row py-[100px] bg-yellow-100">
-                        <div>
-                            <div className="opacity-25">
-                                <Image src={"/images/clock.svg"} alt="clock" width={50} height={50} />
+                    <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1000px] pb-[100px] gap-6">
+                        <div className="flex gap-4 items-center">
+                            <div className="bg-white/20 backdrop-blur w-14 aspect-square flex items-center justify-center rounded-full">
+                                <Clock4 color="white" />
                             </div>
-                            <p>Lorem ipsum dolor</p>
+                            <p className="text-white flex-1">Lorem ipsum dolor Lorem ipsum dolor,adipisci officia debitis, ut possimus. </p>
                         </div>
-                        <div>
-                            <div>
-                                <Image src={"/images/chart.svg"} alt="chart" width={50} height={50} />
+                        <div className="flex gap-4 items-center">
+                            <div className="bg-white/20 backdrop-blur w-14 aspect-square flex items-center justify-center rounded-full">
+                                <TrendingUp color="white" />
                             </div>
-                            <p>Lorem ipsum dolor</p>
+                            <p className="text-white flex-1">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
