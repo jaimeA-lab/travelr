@@ -4,7 +4,7 @@ import { ArrowRight, Clock4, TrendingUp } from "lucide-react"
 export default function Home() {
     return (
         <>
-            <section className="w-full h-screen bg-cover bg-center"
+            <section className="w-full h-screen bg-cover bg-center bg-fixed"
                 style={{ backgroundImage: 'url(\"/images/canyon.jpg\")' }}>
                 <div className="container mx-auto h-screen flex items-start flex flex-col">
                     <div className="flex-1 flex flex-col justify-center items-start gap-10">
