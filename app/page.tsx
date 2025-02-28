@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Clock4, TrendingUp } from "lucide-react"
+import { Armchair, ArrowRight, Clock4, PiggyBank, ShieldCheck, TrendingUp } from "lucide-react"
 
 export default function Home() {
     return (
@@ -31,46 +31,73 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="bg-red-50">
-                <div className="container mx-auto py-[50px] grid grid-cols-2 gap-4">
-                    <div className="bg-red-100">
-                        <h1>Kelingking Beach</h1>
-                        <p>Bali</p>
+            <section className="bg-red-50 w-full h-[700px]">
+                <div className="max-w-[1200px] mx-auto py-[50px] grid grid-cols-2 gap-4 h-[700px] text-white">
+                    <div className="bg-cover bg-center rounded-3xl flex items-end" style={{ backgroundImage: 'url(\"/images/iceland.jpg\")' }}>
+                        <div className="w-full p-12">
+                            <h1 className="text-3xl font-bold">Fjaðrárgljúfur</h1>
+                            <p>Iceland</p>
+                        </div>
                     </div>
-                    <div className="bg-red-100 grid grid-rows-2 gap-4">
+                    <div className="grid grid-rows-2 gap-4">
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-red-300">
-                                <h1>Grand Palace</h1>
-                                <p>Thailand</p>
+                            <div className="bg-cover bg-cente rounded-3xl flex items-end" style={{ backgroundImage: 'url(\"/images/rio-de-janeiro.jpg\")' }}>
+                                <div className="p-8">
+                                    <h1 className="text-3xl font-bold">Rio de Janeiro</h1>
+                                    <p>Brasil</p>
+                                </div>
                             </div>
-                            <div className="bg-red-400">
-                                <h1>Cappadocia</h1>
-                                <p>Turkey</p>
+                            <div className="bg-cover bg-center rounded-3xl flex items-end" style={{ backgroundImage: 'url(\"/images/ha-long.jpg\")' }}>
+                                <div className="p-8">
+                                    <h1 className="text-3xl font-bold">Ha Long</h1>
+                                    <p>Vietnam</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="bg-red-500"><h1>Padar Island</h1>
-                            <p>East Nueva Tenggara</p></div>
+                        <div className="bg-cover bg-center rounded-3xl flex items-end" style={{ backgroundImage: 'url(\"/images/poon-hill.jpg\")' }}>
+                            <div className="p-12">
+                                <h1 className="text-3xl font-bold">Poon Hill</h1>
+                                <p>Nepal</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <div className="container mx-auto grid grid-cols-2 gap-6 py-[50px]">
-                    <div className="grid grid-row-2">
+            <section className="bg-red-500 w-full">
+                <div className="w-[1184px] mx-auto grid grid-cols-2 gap-6 py-[50px]">
+                    <div className="grid grid-rows-2">
                         <div>
-                            <h1>Experience the new adventure</h1>
-                            <p>Lorem ipsum dolor amat.askdbaskdbadskjsbfjbasjkdfabbefjkaebfjkfbaewjkefbawekfbawkjebfjkwbajkfbawekjfbjkwafbkwjaefbkjawejbfakwjeb</p>
+                            <h1 className="text-3xl font-bold pb-4">Experimenta una nueva aventura</h1>
+                            <p>Embárcate en un viaje único que te llevará a descubrir paisajes impresionantes, culturas vibrantes y experiencias que cambiarán tu forma de ver el mundo. Desde exploraciones en la naturaleza hasta aventuras urbanas, nuestra plataforma te ofrece las mejores opciones para sumergirte en una travesía inolvidable. Ya sea que busques adrenalina, relajación o un equilibrio perfecto entre ambas, tenemos el destino ideal para ti. Vive momentos mágicos y crea recuerdos que durarás toda la vida. ¡Tu próxima aventura te espera!</p>
                         </div>
                         <div className="grid grid-rows-3 py-2">
-                            <div><h1>Titulo</h1><p>Texto</p></div>
-                        </div>
-                        <div className="grid grid-rows-3">
-                            <div><h1>Titulo</h1><p>Texto</p></div>
-                        </div>
-                        <div className="grid grid-rows-3">
-                            <div><h1>Titulo</h1><p>Texto</p></div>
+                            <div className="flex flex-row gap-3 items-center">
+                                <ShieldCheck size={64} />
+                                <div>
+                                    <h1>Viaja seguro</h1>
+                                    <p>Tu bienestar es nuestra prioridad. Disfruta de tu aventura con la tranquilidad de saber que contamos con opciones de seguros de viaje y asistencia 24/7 para que tu experiencia sea sin preocupaciones.</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-row gap-3 items-center">
+                                <PiggyBank size={64} />
+                                <div>
+                                    <h1>Precios asequibles</h1>
+                                    <p>Explora el mundo sin romper tu presupuesto. Ofrecemos tarifas competitivas y opciones de pago flexibles para que puedas vivir la aventura de tus sueños a un precio que se adapta a ti.</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-row gap-3 items-center">
+                                <Armchair size={64} />
+                                <div>
+                                    <h1>Alojamientos cómodos</h1>
+                                    <p>Encuentra el lugar perfecto para descansar después de un día lleno de exploración. Desde hoteles boutique hasta resorts de lujo, nuestros alojamientos garantizan confort y calidad para que te sientas como en casa.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    {/* <Image src={ } alt="" width={ } height={ } /> */}
+                    <div style={{ backgroundImage: 'url(\"/images/setenil.jpg\")' }}
+                        className="bg-cover bg-center">
+
+                    </div>
                 </div>
             </section>
             {/* <section
