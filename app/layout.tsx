@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navBar";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
     title: "DFMTravel",
@@ -26,7 +27,11 @@ export default function RootLayout({
             >
                 <NavBar />
                 {children}
+                <footer>
+                    <Footer />
+                </footer>
             </body>
+
         </html>
     );
 }
