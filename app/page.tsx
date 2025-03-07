@@ -29,57 +29,31 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="bg-white-50 w-full min-h-[700px]">
-                <div className="max-w-[1200px] mx-6 sm:mx-auto">
-                    <h1 className="text-3xl font-bold pt-[120px] pb-4 text-left">Tus destinos</h1>
-                </div>
-                <div className="max-w-[1200px] mx-6 sm:mx-auto pb-[50px] grid grid-cols-1 sm:grid-cols-2 gap-4 h-[700px] text-white">
-                    <div className="rounded-3xl flex items-end overflow-hidden xs:rounded-none">
-                        <div
-                            className="w-full h-[160px] sm:h-full bg-cover bg-center transition-transform duration-700 hover:scale-110 flex items-end"
-                            style={{ backgroundImage: 'url("/images/iceland.jpg")' }}
-                        >
-                            <div className="w-full p-12">
-                                <h1 className="text-3xl font-bold">Fjaðrárgljúfur</h1>
-                                <p>Iceland</p>
-                            </div>
+            {/* Los paddings se dan a la sección, no a un h1. La sección es la que envuelve el contenido, ergo es la que ajusta los espaciados. */}
+            <section className="bg-white-50 w-full min-h-[700px] px-8 pt-[60px] sm:pt-[120px] pb-[50px]">
+                <h1 className="text-3xl font-bold pb-4 text-left max-w-[1200px] mx-auto">Tus destinos</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[1200px] mx-auto">
+                    <div className="h-[200px] sm:h-full bg-red-400 rounded-3xl bg-cover bg-center overflow-hidden" style={{ backgroundImage: 'url("/images/iceland.jpg")' }}>
+                        <div className="w-full h-full flex items-end justify-start p-10 bg-gradient-to-t from-black/50 to-transparent">
+                            <h3 className="text-2xl text-white font-bold">Iceland</h3>
                         </div>
                     </div>
-                    <div className="grid grid-rows-2 gap-4">
+                    <div className="grid grid-cols-1 gap-4">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div className="rounded-3xl flex items-end overflow-hidden xs:rounded-none">
-                                <div
-                                    className="w-full h-[160px] sm:h-full bg-cover bg-center transition-transform duration-700 hover:scale-110 flex items-end"
-                                    style={{ backgroundImage: 'url("/images/rio-de-janeiro.jpg")' }}
-                                >
-                                    <div className="p-8">
-                                        <h1 className="text-3xl font-bold">Rio de Janeiro</h1>
-                                        <p>Brasil</p>
-                                    </div>
+                            <div className="h-[200px] sm:h-[300px] bg-red-400 rounded-3xl bg-cover bg-center overflow-hidden" style={{ backgroundImage: 'url("/images/rio-de-janeiro.jpg")' }}>
+                                <div className="w-full h-full flex items-end justify-start p-10 bg-gradient-to-t from-black/50 to-transparent">
+                                    <h3 className="text-2xl text-white font-bold">Rio de Janeiro</h3>
                                 </div>
                             </div>
-
-                            <div className="rounded-3xl flex items-end overflow-hidden xs:rounded-none">
-                                <div
-                                    className="w-full h-[160px] sm:h-full bg-cover bg-center transition-transform duration-700 hover:scale-110 flex items-end"
-                                    style={{ backgroundImage: 'url("/images/ha-long.jpg")' }}
-                                >
-                                    <div className="p-8">
-                                        <h1 className="text-3xl font-bold">Ha Long</h1>
-                                        <p>Vietnam</p>
-                                    </div>
+                            <div className="h-[200px] sm:h-[300px] bg-red-400 rounded-3xl bg-cover bg-center overflow-hidden" style={{ backgroundImage: 'url("/images/ha-long.jpg")' }}>
+                                <div className="w-full h-full flex items-end justify-start p-10 bg-gradient-to-t from-black/50 to-transparent">
+                                    <h3 className="text-2xl text-white font-bold">Ha Long</h3>
                                 </div>
                             </div>
                         </div>
-                        <div className="rounded-3xl flex items-end overflow-hidden xs:rounded-none">
-                            <div
-                                className="w-full h-[160px] sm:h-full bg-cover bg-center transition-transform duration-700 hover:scale-110 flex items-end"
-                                style={{ backgroundImage: 'url("/images/poon-hill.jpg")' }}
-                            >
-                                <div className="p-12">
-                                    <h1 className="text-3xl font-bold">Poon Hill</h1>
-                                    <p>Nepal</p>
-                                </div>
+                        <div className="h-[200px] sm:h-[300px] bg-red-400 rounded-3xl bg-cover bg-center overflow-hidden" style={{ backgroundImage: 'url("/images/poon-hill.jpg")' }}>
+                            <div className="w-full h-full flex items-end justify-start p-10 bg-gradient-to-t from-black/50 to-transparent">
+                                <h3 className="text-2xl text-white font-bold">Poon Hill</h3>
                             </div>
                         </div>
                     </div>
