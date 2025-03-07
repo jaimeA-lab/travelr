@@ -11,10 +11,7 @@ export default function Home() {
                     <div className="flex flex-col justify-center items-start gap-10 flex-1 ">
                         <div className="text-white bg-white/20 h-10 items-center flex px-4 rounded-full text-sm border border-white/20">Viaja como nunca antes</div>
                         <h1 className="text-4xl sm:text-7xl text-white max-w-[800px] font-bold">Porque una buena experiencia comienza antes del viaje.</h1>
-                        <button className="flex bg-white h-12 px-6 text-black rounded-full font-semibold items-center gap-2">
-                            Conócenos
-                            <ArrowRight size={16} />
-                        </button>
+                        <a className="flex bg-white h-12 px-6 text-black rounded-full font-semibold items-center gap-2" href="#about">Conócenos<ArrowRight size={16} /></a>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1000px] pb-[100px] gap-6">
                         <div className="flex gap-4 items-center">
@@ -148,7 +145,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="w-full py-[150px]">
+            <section id="#about" className="w-full py-[150px]">
                 <div className="max-w-[1072px] mx-6 sm:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div className="">
                         <h1 className="font-bold text-3xl mb-4">¿Por qué elegir nuestra agencia de viajes?</h1>
