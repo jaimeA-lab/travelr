@@ -7,7 +7,7 @@ export default function Home() {
                 className="w-full h-screen bg-cover bg-center sm:bg-fixed px-8"
                 style={{ backgroundImage: 'url(\"/images/canyon.jpg\")' }}
             >
-                <div className="container mx-auto h-screen flex items-start flex flex-col w-full">
+                <div className="container mx-auto h-screen items-start flex flex-col w-full">
                     <div className="flex flex-col justify-center items-start gap-10 flex-1 ">
                         <div className="text-white bg-white/20 h-10 items-center flex px-4 rounded-full text-sm border border-white/20">Viaja como nunca antes</div>
                         <h1 className="text-4xl sm:text-7xl text-white max-w-[800px] font-bold">Porque una buena experiencia comienza antes del viaje.</h1>
