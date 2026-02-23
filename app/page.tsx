@@ -145,7 +145,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section id="#about" className="w-full py-[150px]">
+            <section id="about" className="w-full py-[150px]">
                 <div className="max-w-[1072px] mx-6 sm:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div className="">
                         <h1 className="font-bold text-3xl mb-4">¿Por qué elegir nuestra agencia de viajes?</h1>
